@@ -1,31 +1,21 @@
 body {
-	background-color: white;
+	padding: 0;
+	margin: 0;
+	background: transparent url('../../dn2017/images/parliament-hill-from-nepean-point.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-}
-
-section {
-  min-height: 10em;
-}
-
-.banner{
-  background-image: url('/assets/Ottawa-Parliament-Hill.jpg');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+header {
+	position: absolute;
 }
 
 .pattern {
-  background: transparent url(https://drupalcampottawa.com/sites/all/themes/drupalcampy/images/pattern.png);
-  background-repeat: repeat;
-  background-position: top left;
-  width: 100%;
-  height: 25em;
-  overflow: hidden;
-  display: block;
+  background: transparent url('../../dn2017/images/pattern.png') repeat;
+  height: 1000vh;
+  width: 1000vh;
+  z-index: 2;
 }
 
 .dn-info {
