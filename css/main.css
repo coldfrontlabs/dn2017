@@ -164,6 +164,7 @@ section.banner {
 	background: transparent url('../../dn2017/images/footer-bg.svg') no-repeat;
 	background-size: cover;
 	background-position: center bottom;
+	margin-top: 2em;
 }
 
 footer {
