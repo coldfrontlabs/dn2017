@@ -2,12 +2,34 @@ body {
 	margin: 0;
 }
 
+h2 {
+	font-family: open sans;
+	text-align: center;
+	color: #444;
+}
+
 header {
 	padding: 0;
 	margin: 0;
 	background: transparent url('../../dn2017/images/parliament-hill-from-nepean-point.jpg') no-repeat center center;
 	background-size: cover;
 	height: 50em;
+}
+
+.logo {
+  background-color: black;
+  height: 2.25em;
+  margin-top: 3em;
+  padding-top: 2em;
+  z-index: 2;
+  position: fixed;
+  width: 100%
+}
+
+.logo img {
+  width: 25em;
+  display: block;
+  margin: -4.5em auto;
 }
 
 .pattern {
@@ -29,7 +51,7 @@ header {
 	padding: 0 2em;
 	display: block;
 	text-align: center;
-	max-width: 400px;
+	max-width: 500px;
 	border-radius: 5px;
 	z-index: 3;
 	background-color: white;
@@ -38,19 +60,18 @@ header {
 
 .dn-info p {
 	font-family: Open Sans;
-	font-size: 12px;
+	font-size: 15px;
 	color: #222;
 }
-
-
 
 .dn-info input {
 	border-radius: 3px 0 0 3px;
 	border: 1px solid #ccc;
 	padding: 6px;
-	font-size: 16px;
+	font-size: 18px;
 	color: #222;
 	margin-right: -5px;
+	width: 60%;
 }
 
 .dn-info input:focus {
@@ -60,13 +81,14 @@ header {
 }
 
 .dn-info button {
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 300;
 	padding: 6px;
 	border-radius: 0 3px 3px 0;
 	background-color: #2BA9E0;
 	border: 1px solid #2BA9E0;
 	color: white;
+	transition: background 0.3s ease 0s;
 }
 
 .dn-info button:focus {
@@ -74,25 +96,27 @@ header {
 }
 
 .dn-info button:hover {
-	border: 1px solid #0F3768;
-	color: #0F3768;
-
+	border: 1px solid #1c53a0;
+	color: #fff;
+	background-color: #1c53a0;
+}
+.drupal-logo {
+	width: 70%;
 }
 
-.logo {
-  background-color: black;
-  height: 2.25em;
-  margin-top: 3em;
-  padding-top: 2em;
-  z-index: 2;
-  position: fixed;
-  width: 100%
+p.info-slogan {
+	font-weight: 500;
+	margin-bottom: 5px;
+	font-size: 19px;
 }
 
-.logo img {
-  width: 25em;
-  display: block;
-  margin: -4.5em auto;
+p.info-desc {
+	color: #777;
+	margin-top: 0;
+}
+
+hr {
+	border: 1px solid #eee;
 }
 
 .dn-info input::-webkit-input-placeholder {
@@ -115,11 +139,37 @@ header {
 	font-weight: 200;
 }
 
-footer {
-	background: transparent url('../../dn2017/images/footer-bg.svg') no-repeat;
-	background-size: cover;
-	background-position: center bottom 10em;
-	width: 100%;
-	height: 30em;
+.sponsors {
+	margin: 2em 0 10em 0;
 }
 
+i.social {
+	color: white;
+	font-size: 30px;
+	border-radius: 100px;
+	background-color: #222;
+	width: 1em;
+	padding: .5em;
+	transition: background-color 500ms ease;
+	margin-right: 1em;
+}
+
+i.social:hover {
+	background-color: #1c53a0; 
+}
+
+section.banner {	
+	width: 100%;
+	height: 45vh;
+	background: transparent url('../../dn2017/images/footer-bg.svg') no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+}
+
+footer {
+	background-color: #EBEBEB;
+	height: 10em;
+	font-family: open sans;
+	text-align: center;
+	margin-top: -1em;
+}
